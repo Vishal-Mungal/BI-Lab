@@ -1,0 +1,3 @@
+CSV Reader → Row Filter → GroupBy → Math Formula → Bar Chart / Pie Chart
+•	Aggregation: Sum(Sales)
+•	Formula: (Sales / sum(Sales)) * 100
