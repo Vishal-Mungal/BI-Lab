@@ -1,0 +1,9 @@
+For slice:
+=FILTER(A2:H20, A2:A20="Facebook")
+=FILTER(A2:H20, (A2:A20="Instagram")*(B2:B20="Video"))
+For roll-up:
+=SUMIF(A:A,"Facebook",D:D)
+=SUMIF(A:A,"Instagram",D:D)
+=SUMIF(A:A,"Twitter",D:D)
+For Drill-down:
+=FILTER(A2:H20, A2:A20="Instagram")
