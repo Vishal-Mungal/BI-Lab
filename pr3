@@ -1,0 +1,32 @@
+Step 1: Database Preparation
+●	Ensure the SQL database (MySQL, SQL Server, etc.) is properly structured:
+○	Sales Table: transaction_id, customer_id, product_id, sale_date, quantity, revenue.
+○	Customer Table: customer_id, name, age, gender, region.
+○	Product Table: product_id, product_name, category, price, supplier.
+●	Apply indexes on frequently queried fields (e.g.,
+sale_date, customer_id, product_id) for
+performance.
+Step 2: Establish Connection in Tableau
+●	Open Tableau → Connect to Server → choose SQL database type.
+●	Enter server details, database name, and credentials.
+●	Test connection to confirm access.
+Step 3: Choose Connection Type
+●	Live Connection: Direct queries to SQL for real-time updates.
+●	Extracts: Pull data into Tableau’s Hyper engine for faster performance (schedule refreshes if needed).
+Step 4: Data Modeling in Tableau
+●	Import tables and define relationships:
+○	Sales.customer_id →
+Customers.customer_id
+○	Sales.product_id →
+Products.product_id
+●	Use Joins or Relationships depending on analysis needs.
+●	Create calculated fields (e.g., profit margin, average order value).
+Step 5: Dashboard Design
+●	Sales Trends: Line chart showing revenue over time.
+●	Customer Demographics: Bar chart for age groups, pie chart for gender distribution.
+●	Product Performance: Top-selling products, category-wise sales, profit analysis.
+●	Add filters and parameters for region, product category, and time period.
+Step 6: Optimization
+●	Use SQL Views for pre-aggregated data (e.g., monthly sales totals).
+●	Apply row-level security for sensitive customer data.
+●	Tune queries and indexes to avoid slow dashboard performance.
